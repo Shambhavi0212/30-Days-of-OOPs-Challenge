@@ -1,10 +1,12 @@
 # 🚀 30 Days of OOPs Challenge (Java)
 
 Welcome to my **30-Days-of-OOPs-Challenge**!  
-The goal of this repository is to **learn and practice Object-Oriented Programming (OOP)** concepts in Java step by step for 30 days.  
+This is my personal journey of mastering **Object-Oriented Programming (OOP)** in Java — one concept a day for 30 days.  
 
-Each day, I will:  
-- 📖 Learn one OOP concept (theory + examples)  
-- 💻 Implement Java programs in **VS Code**  
-- 📸 Add **screenshots of my code & outputs**  
-- 📝 Write notes for quick revision  
+## 📌 What this repo contains
+- 📖 Daily OOP concept (theory + examples)  
+- 💻 Java programs in **VS Code**  
+- 🧑‍💻 Executable `.java` files with class structure  
+- 📸 Screenshots of code & outputs  
+- 📝 Notes for quick revision  
+- 🗂️ Organized by day-wise folders
