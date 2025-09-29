@@ -9,17 +9,33 @@ To inherit from a class, use the `extends` keyword.
 
 ---
 
-## Example
-
 
 # Java Inheritance Concepts
+## Types of Inheritance in Java
 
-## Access Modifiers
+Inheritance in Java can be classified into several types based on how classes are related:
 
-Notice the `protected` modifier in `Vehicle`:
+1. **Single Inheritance**  
+   - A subclass inherits from **one** superclass.  
+   - Example: `Car` inherits from `Vehicle`.
 
-- The `brand` attribute in `Vehicle` is set to `protected`, which allows the `Car` class to access it.
-- If it were set to `private`, the `Car` class would **not** be able to access it.
+2. **Multilevel Inheritance**  
+   - A chain of inheritance where a class inherits from a subclass, which in turn inherits from another superclass.  
+   - Example: `SportsCar` → `Car` → `Vehicle`.
+
+3. **Hierarchical Inheritance**  
+   - Multiple subclasses inherit from a **single superclass**.  
+   - Example: `Car` and `Bike` both inherit from `Vehicle`.
+
+4. **Multiple Inheritance (through interfaces)**  
+   - A class can implement **multiple interfaces** to achieve multiple inheritance.  
+   - Note: Java **does not support multiple inheritance with classes** to avoid ambiguity.  
+   - Example: `class FlyingCar implements Vehicle, FlyingMachine`.
+
+5. **Hybrid Inheritance**  
+   - A combination of two or more types of inheritance (usually single + multiple via interfaces).  
+   - Example: `SportsCar` inherits from `Car` and implements `Racing` interface.
+
 
 ## Why and When to Use Inheritance?
 
