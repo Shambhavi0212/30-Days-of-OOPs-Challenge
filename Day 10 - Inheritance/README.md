@@ -1,4 +1,4 @@
-# Java Inheritance
+# Java Inheritance (Subclass and Superclass)
 
 In Java, it is possible to inherit attributes and methods from one class to another. We group the **inheritance concept** into two categories:
 
@@ -7,13 +7,16 @@ In Java, it is possible to inherit attributes and methods from one class to anot
 
 To inherit from a class, use the `extends` keyword.
 
+---
+
 ## Example
 
-The `Car` class (subclass) inherits the attributes and methods from the `Vehicle` class (superclass):
+In the example below, the `Car` class (subclass) inherits the attributes and methods from the `Vehicle` class (superclass):
 
 ```java
 class Vehicle {
   protected String brand = "Ford";        // Vehicle attribute
+
   public void honk() {                    // Vehicle method
     System.out.println("Tuut, tuut!");
   }
@@ -21,8 +24,8 @@ class Vehicle {
 
 class Car extends Vehicle {
   private String modelName = "Mustang";    // Car attribute
-  public static void main(String[] args) {
 
+  public static void main(String[] args) {
     // Create a myCar object
     Car myCar = new Car();
 
@@ -32,58 +35,31 @@ class Car extends Vehicle {
     // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
     System.out.println(myCar.brand + " " + myCar.modelName);
   }
-}```
+}
+# Java Inheritance Concepts
 
-#Notes on Java Inheritance
+## Access Modifiers
 
-##Access Modifiers
+Notice the `protected` modifier in `Vehicle`:
 
-- The `brand` attribute in `Vehicle` is `protected`.  
-- If it were `private`, the `Car` class would **not** be able to access it.
+- The `brand` attribute in `Vehicle` is set to `protected`, which allows the `Car` class to access it.
+- If it were set to `private`, the `Car` class would **not** be able to access it.
 
-# Why and When to Use Inheritance
+## Why and When to Use Inheritance?
 
 - **Code Reusability**: Reuse attributes and methods of an existing class when creating a new class.  
-- Helps organize classes in a hierarchical manner.  
-- Works together with **Polymorphism** for performing different tasks using inherited methods.
+- **Hierarchical Relationships**: Helps maintain a clear parent-child relationship between classes.  
+- **Polymorphism**: Often used in combination with polymorphism, which allows inherited methods to perform different tasks.
 
-#The `final` Keyword
+## The `final` Keyword
 
-##- If you don’t want other classes to inherit from a class, use the `final` keyword:
+- If you don't want other classes to inherit from a class, use the `final` keyword:
 
 ```java
 final class Vehicle {
-  ...
+  // class content
 }
 
 class Car extends Vehicle {
-  ...
-}```
-#If you try to inherit from a final class, Java will generate an error:
--Main.java:9: error: cannot inherit from final Vehicle
--class Main extends Vehicle {
-                  ^
--1 error
--vbnet
-# Types of Inheritance in Java
-
-1. **Single Inheritance**  
-   - A subclass inherits from **one** superclass.  
-   - Example: `class Car extends Vehicle { ... }`
-
-2. **Multilevel Inheritance**  
-   - A chain of inheritance where a subclass acts as a superclass for another subclass.  
-   - Example: `class Vehicle → class Car → class SportsCar`
-
-3. **Hierarchical Inheritance**  
-   - Multiple subclasses inherit from **one** superclass.  
-   - Example: `class Vehicle → class Car`, `class Vehicle → class Truck`
-
-4. **Multiple Inheritance (via Interfaces)**  
-   - A class implements **multiple interfaces** to achieve multiple inheritance.  
-   - Example: `class Car implements Interface1, Interface2 { ... }`
-
-5. **Hybrid Inheritance**  
-   - A combination of **two or more types** of inheritance.  
-   - Achieved using classes and interfaces to avoid ambiguity.
-
+  // This will cause an error
+}
