@@ -32,11 +32,11 @@ class Car extends Vehicle {
     // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
     System.out.println(myCar.brand + " " + myCar.modelName);
   }
-}
+}```
 
- Notes on Java Inheritance
+#Notes on Java Inheritance
 
-Access Modifiers
+##Access Modifiers
 
 - The `brand` attribute in `Vehicle` is `protected`.  
 - If it were `private`, the `Car` class would **not** be able to access it.
@@ -58,7 +58,7 @@ final class Vehicle {
 
 class Car extends Vehicle {
   ...
-}
+}```
 #If you try to inherit from a final class, Java will generate an error:
 -Main.java:9: error: cannot inherit from final Vehicle
 -class Main extends Vehicle {
