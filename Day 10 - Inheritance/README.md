@@ -35,20 +35,20 @@ class Car extends Vehicle {
 }
 # Notes on Java Inheritance
 
-## Access Modifiers
+#Access Modifiers
 
 - The `brand` attribute in `Vehicle` is `protected`.  
 - If it were `private`, the `Car` class would **not** be able to access it.
 
-## Why and When to Use Inheritance
+# Why and When to Use Inheritance
 
 - **Code Reusability**: Reuse attributes and methods of an existing class when creating a new class.  
 - Helps organize classes in a hierarchical manner.  
 - Works together with **Polymorphism** for performing different tasks using inherited methods.
 
-## The `final` Keyword
+#The `final` Keyword
 
-- If you don’t want other classes to inherit from a class, use the `final` keyword:
+##- If you don’t want other classes to inherit from a class, use the `final` keyword:
 
 ```java
 final class Vehicle {
@@ -58,7 +58,7 @@ final class Vehicle {
 class Car extends Vehicle {
   ...
 }
-##If you try to inherit from a final class, Java will generate an error:
+#If you try to inherit from a final class, Java will generate an error:
 -Main.java:9: error: cannot inherit from final Vehicle
 -class Main extends Vehicle {
                   ^
