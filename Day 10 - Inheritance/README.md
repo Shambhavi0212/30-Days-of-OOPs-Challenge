@@ -33,9 +33,10 @@ class Car extends Vehicle {
     System.out.println(myCar.brand + " " + myCar.modelName);
   }
 }
-# Notes on Java Inheritance
 
-#Access Modifiers
+ Notes on Java Inheritance
+
+Access Modifiers
 
 - The `brand` attribute in `Vehicle` is `protected`.  
 - If it were `private`, the `Car` class would **not** be able to access it.
