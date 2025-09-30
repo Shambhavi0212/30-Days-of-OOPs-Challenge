@@ -11,7 +11,7 @@ To inherit from a class, use the `extends` keyword.
 
 
 # Java Inheritance Concepts
-## Types of Inheritance in Java
+## Types of Inheritance in Java :
 
 
 Inheritance in Java can be classified into several types based on how classes are related:
